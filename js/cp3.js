@@ -24,9 +24,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = primeiroNomeInput.value;
   
     if (valor.length < 5) {
-      document.getElementById('erroPrimeiroNome').innerHTML = 'O primeiro nome deve ter no mínimo 5 caracteres.';
-    } else {
-      document.getElementById('erroPrimeiroNome').innerHTML = '';
+      alert('O primeiro nome deve ter no mínimo 5 caracteres.');
     }
   }
   
@@ -35,9 +33,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = segundoNomeInput.value;
   
     if (valor.length < 5) {
-      document.getElementById('erroSegundoNome').innerHTML = 'O segundo nome deve ter no mínimo 5 caracteres.';
-    } else {
-      document.getElementById('erroSegundoNome').innerHTML = '';
+      alert('O segundo nome deve ter no mínimo 5 caracteres.');
     }
   }
   
@@ -46,9 +42,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = emailInput.value;
   
     if (valor.length < 5 || !valor.includes('@')) {
-      document.getElementById('erroEmail').innerHTML = 'O email deve ter no mínimo 5 caracteres e conter o caractere "@".';
-    } else {
-      document.getElementById('erroEmail').innerHTML = '';
+      alert('O email deve ter no mínimo 5 caracteres e conter o caractere "@".');
     }
   }
   
@@ -57,9 +51,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = senhaInput.value;
   
     if (valor.length < 6 || valor.length > 8) {
-      document.getElementById('erroSenha').innerHTML = 'A senha deve ter entre 6 e 8 caracteres.';
-    } else {
-      document.getElementById('erroSenha').innerHTML = '';
+      alert('A senha deve ter entre 6 e 8 caracteres.');
     }
   }
   
@@ -70,11 +62,10 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const confirmacaoSenha = confirmacaoSenhaInput.value;
   
     if (senha !== confirmacaoSenha) {
-      document.getElementById('erroConfirmacaoSenha').innerHTML = 'A confirmação de senha não corresponde à senha informada.';
-    } else {
-      document.getElementById('erroConfirmacaoSenha').innerHTML = '';
+      alert('A confirmação de senha não corresponde à senha informada.');
     }
   }
+
 
 
 
