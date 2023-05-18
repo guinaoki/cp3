@@ -78,3 +78,26 @@ function alternarDarkMode() {
         stylesheet.setAttribute('href', 'dark-mode.css');
     }
 }
+
+// Função para alternar entre o modo claro e escuro
+function alternarDarkMode() {
+    const body = document.body;
+  
+    // Adicionar ou remover a classe 'dark-mode' no elemento <body>
+    body.classList.toggle('dark-mode');
+  
+    // Verificar se o modo escuro está ativado
+    const isDarkMode = body.classList.contains('dark-mode');
+  
+    // Salvar a preferência do usuário no armazenamento local
+    localStorage.setItem('darkMode', isDarkMode);
+  }
+  
+  // Verificar a preferência do usuário no armazenamento local ao carregar a página
+  window.addEventListener('load', function() {
+    const darkMode = localStorage.getItem('darkMode');
+  
+    if (darkMode === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+  });
