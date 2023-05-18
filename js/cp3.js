@@ -54,4 +54,10 @@ function validarFormulario() {
 
 function toggleDarkMode() {
     const stylesheet = document.getElementById('darkModeStylesheet');
+
+    if (stylesheet.getAttribute('href')) {
+        stylesheet.removeAttribute('href');
+    } else {
+        stylesheet.setAttribute('href', 'dark-mode.css');
+    }
 }
