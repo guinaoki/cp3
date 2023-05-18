@@ -50,3 +50,8 @@ function validarFormulario() {
     // Se houver algum campo inválido, retorna false para impedir o envio do formulário
     return !document.querySelectorAll('.invalid').length;
 }
+
+
+function toggleDarkMode() {
+    const stylesheet = document.getElementById('darkModeStylesheet');
+}
