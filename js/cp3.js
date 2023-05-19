@@ -72,10 +72,10 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
 function alternarDarkMode() {
     const stylesheet = document.getElementById('darkModeStylesheet');
 
-    if (stylesheet.getAttribute('href')) {
-        stylesheet.removeAttribute('href');
+    if (stylesheet.getAttribute( 'href' )) {
+        stylesheet.removeAttribute( 'href' );
     } else {
-        stylesheet.setAttribute('href', 'dark-mode.css');
+        stylesheet.setAttribute( 'href', 'dark-mode.css' );
     }
 }
 
