@@ -6,7 +6,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     validarEmail();
     validarSenha();
     validarConfirmacaoSenha();
-  
+
     // Se houver algum campo inválido, retorna false para impedir o envio do formulário
     if (document.querySelectorAll('.erro').length > 0) {
       return false;
