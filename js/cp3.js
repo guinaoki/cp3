@@ -51,7 +51,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = senhaInput.value;
   
     if (valor.length < 6 || valor.length > 8) {
-      alert('A senha deve  ter entre 6 e 8 caracteres.');
+      alert('A senha deve ter entre 6 e 8 caracteres.');
     }
   }
   
