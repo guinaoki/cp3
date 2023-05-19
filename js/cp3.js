@@ -69,7 +69,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
 
 
 
-function alternarDarkMode() {
+  function alternarDarkMode() {
     const stylesheet = document.getElementById('darkModeStylesheet');
 
     if (stylesheet.getAttribute('href')) {
