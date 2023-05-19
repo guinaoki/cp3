@@ -1,5 +1,5 @@
 document.getElementById('meuFormulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault(); // Impedindo o envio do formulário
   
     validarPrimeiroNome();
     validarSegundoNome();
