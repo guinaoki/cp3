@@ -1,11 +1,11 @@
 document.getElementById('meuFormulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
-  
-    validarPrimeiroNome();
-    validarSegundoNome();
-    validarEmail();
-    validarSenha();
-    validarConfirmacaoSenha();
+  event.preventDefault(); // Impede o envio do formulário
+
+  validarPrimeiroNome();
+  validarSegundoNome();
+  validarEmail();
+  validarSenha();
+  validarConfirmacaoSenha();
   
     // Se houver algum campo inválido, retorna false para impedir o envio do formulário
     if (document.querySelectorAll('.erro').length > 0) {
