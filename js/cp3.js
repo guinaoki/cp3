@@ -7,7 +7,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     validarSenha();
     validarConfirmacaoSenha();
   
-    // Se houver algum campo inválido, retorna false para impedir o envio do formulário
+    // Se houver algum campo inválido, retornamos false para impedir o envio do formulário
     if (document.querySelectorAll('.erro').length > 0) {
       return false;
     }
@@ -76,7 +76,7 @@ function alternarDarkMode() {
     }
 }
 
-// Função para alternar entre o modo claro e escuro
+// Função para alternar entre o modo claro e escuro.
 function alternarDarkMode() {
     const body = document.body;
   
@@ -90,7 +90,7 @@ function alternarDarkMode() {
     localStorage.setItem('darkMode', isDarkMode);
   }
   
-  // Verificar a preferência do usuário no armazenamento local ao carregar a página
+  // Verificar a preferência do usuário no armazenamento local ao carregar a página.
   window.addEventListener('load', function() {
     const darkMode = localStorage.getItem('darkMode');
   
