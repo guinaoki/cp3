@@ -98,3 +98,4 @@ function alternarDarkMode() {
       document.body.classList.add('dark-mode');
     }
   });
+// Fim
