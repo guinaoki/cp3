@@ -42,7 +42,7 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     const valor = emailInput.value;
   
     if (valor.length < 5 || !valor.includes('@')) {
-      alert('O email deve ter no mínimo 5 caracteres e conter o caractere "@".');
+      alert('O email deve conter no mínimo 5 caracteres e conter o caractere "@".');
     }
   }
   
