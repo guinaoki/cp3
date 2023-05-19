@@ -66,9 +66,6 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     }
   }
 
-
-
-
 function alternarDarkMode() {
     const stylesheet = document.getElementById('darkModeStylesheet');
 
