@@ -1,5 +1,5 @@
 document.getElementById('meuFormulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault(); 
   
     validarPrimeiroNome();
     validarSegundoNome();
@@ -7,16 +7,11 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     validarSenha();
     validarConfirmacaoSenha();
   
-    // Se houver algum campo inválido, retorna false para impedir o envio do formulário
     if (document.querySelectorAll('.erro').length > 0) {
       return false;
     }
   
-    // Aqui você pode prosseguir com o envio do formulário ou realizar outras ações desejadas.
-    // Por exemplo, você pode enviar os dados para um servidor usando AJAX ou realizar outras manipulações.
-  
     alert('Formulário enviado com sucesso!');
-    // Aqui você pode fazer outras ações, como limpar os campos do formulário ou redirecionar para outra página.
   });
   
   function validarPrimeiroNome() {
@@ -79,21 +74,16 @@ function alternarDarkMode() {
     }
 }
 
-// Função para alternar entre o modo claro e escuro
 function alternarDarkMode() {
     const body = document.body;
   
-    // Adicionar ou remover a classe 'dark-mode' no elemento <body>
     body.classList.toggle('dark-mode');
   
-    // Verificar se o modo escuro está ativado
     const isDarkMode = body.classList.contains('dark-mode');
   
-    // Salvar a preferência do usuário no armazenamento local
     localStorage.setItem('darkMode', isDarkMode);
   }
-  
-  // Verificar a preferência do usuário no armazenamento local ao carregar a página
+
   window.addEventListener('load', function() {
     const darkMode = localStorage.getItem('darkMode');
   
